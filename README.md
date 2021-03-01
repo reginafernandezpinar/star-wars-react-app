@@ -25,7 +25,3 @@ The app should be running on the default port _(localhost://3000)_
 ## Authors
 
 * **Regina Fernández Píñar** - [reginafernandezpinar](https://github.com/reginafernandezpinar)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
