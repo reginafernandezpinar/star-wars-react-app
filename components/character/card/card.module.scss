@@ -1,0 +1,17 @@
+.card {
+  margin: 1rem 0;
+  max-width: 800px;
+  padding: 1.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  li {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
