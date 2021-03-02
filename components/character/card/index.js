@@ -3,9 +3,9 @@ import styles from "./card.module.scss";
 const CharacterCard = ({ characterDetails }) => {
   return (
     <ul className={styles.card}>
-      {characterDetails.map(detail => (
+      {characterDetails?.map(({ label, value}) => (
         <li>
-          {detail.label}: {detail.value}
+          {label}: {value}
         </li>
       ))}
     </ul>

@@ -12,10 +12,7 @@ import styles from "./character.module.scss";
 const Character = () => {
   const [characterData, setCharacterData] = useState(null);
   const [characterFilms, setCharacterFilms] = useState([]);
-
-  const {
-    query: { id },
-  } = useRouter();
+  const { query: { id } } = useRouter();
 
   const getYearsFromNow = value => {
     const date = new Date(value);

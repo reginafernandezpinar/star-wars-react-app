@@ -7,33 +7,33 @@ import CharaterList from "../components/character/list";
 import styles from "./home.module.scss";
 
 export default function Home() {
-  const [characterData, setCharacterData] = useState({
+  const [charactersData, setCharactersData] = useState({
     characters: [],
-    nextPageUrl: '',
+    nextPageUrl: "",
   });
 
   useEffect(() => {
     fetchCharacterList()
-      .then(({ data }) =>
-        setCharacterData({ characters: data.results, nextPageUrl: data.next })
+      .then(({ data: { results, next } }) =>
+        setCharactersData({ characters: results, nextPageUrl: next })
       )
       .catch(error => {
-        console.log('error', error);
+        console.log("error", error);
       });
   }, []);
 
-  const { characters, nextPageUrl } = characterData;
+  const { characters, nextPageUrl } = charactersData;
 
   const handleLoadMore = () => {
     fetchMoreCharacters(nextPageUrl)
-      .then(({ data }) => {
-        setCharacterData({
-          characters: [...characters, ...data.results],
-          nextPageUrl: data.next,
+      .then(({ data: { results, next } }) => {
+        setCharactersData({
+          characters: [...characters, ...results],
+          nextPageUrl: next,
         });
       })
       .catch(error => {
-        console.log('error', error);
+        console.log("error", error);
       });
   };
 

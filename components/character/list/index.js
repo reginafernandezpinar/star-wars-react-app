@@ -10,8 +10,8 @@ const CharaterList = ({ characters }) => {
           <a className={styles.card}>
             <h3>{character.name}</h3>
             <div className={styles['card-bottom']}>
-              <p>{`${character.films.length} films`}</p>
-              <p>{`birth year: ${character.birth_year}`}</p>
+              <p>{character.films.length} films</p>
+              <p>birth year: {character.birth_year}</p>
             </div>
           </a>
         </Link>
