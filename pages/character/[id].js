@@ -43,7 +43,7 @@ const Character = () => {
       .catch(error => {
         console.log("error", error);
       });
-  }, []);
+  }, [id]);
 
   const characterDetails = [
     {
