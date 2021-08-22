@@ -49,6 +49,8 @@
     width: 100%;
     flex-direction: column;
   }
+}
+@media (max-width: 1100px) {
   .card .card-bottom {
     display: block;
   }
