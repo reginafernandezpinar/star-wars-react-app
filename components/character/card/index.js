@@ -4,7 +4,7 @@ const CharacterCard = ({ characterDetails }) => {
   return (
     <ul className={styles.card}>
       {characterDetails?.map(({ label, value}) => (
-        <li>
+        <li key={`characterCard-${label}`}>
           {label}: {value}
         </li>
       ))}

@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 200px;
+  min-width: 300px;
   margin: 1rem;
   flex-basis: 30%;
   padding: 1.5rem;
@@ -47,5 +48,8 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .card .card-bottom {
+    display: block;
   }
 }
